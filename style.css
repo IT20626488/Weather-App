@@ -1,0 +1,190 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background:url('https://images.unsplash.com/photo-1505533542167-8c89838bb19e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 20px 70px;
+    color:#fff;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.datecon{
+    font-weight: 100;
+}
+.datecon .time{
+    font-size: 70px;
+}
+
+.datecon #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.datecon .date{
+    font-size: 30px;
+}
+
+.palcecon{
+    text-align: end;
+}
+
+.palcecon .timezone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.palcecon .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .wetheritem{
+    display: flex;
+    justify-content: space-between;
+}
+.futurecast{
+    background: rgba(24,24,27,0.8);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.futurecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.futurecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.futurecast .today .temp{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.futurecast .wetherforcast{
+    display: flex;
+}
+
+.wetherforcast .wethercastitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.wetherforcast .wethercastitem .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.wetherforcast .wethercastitem .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+@media only screen and  (max-width:730px){
+    
+    .container{
+        padding: 20px;
+    }
+    
+    .futurecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .futurecast .today .temp{
+        font-size: 16px;
+    }
+
+    .datecon .time{
+        font-size: 50px;
+    }
+
+    .datecon #am-pm{
+        font-size: 20px;
+    }
+
+    .datecon .date{
+        font-size: 20px;
+    }
+
+    .datecon{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .palcecon .timezone{
+        font-size: 20px;
+    }
+
+    .current-info .others{
+        padding: 12px;
+    }
+
+    .current-info .others .wetheritem{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px){
+    .futurecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
+
+

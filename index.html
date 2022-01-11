@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>wether app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="current-info">
+       <div class="datecon">
+          <div class="time" id="time">
+                12:00<span id="am-pm">PM</span>
+
+          </div>  
+           <div class="date" id="date">
+                Monday,10 January
+
+           </div> 
+           <div class="others" id="currentwetheritem">
+               
+           </div>
+       </div> 
+        <div class="palcecon">
+            <div class="timezone" id="timezone">Asia/Sri Lanka</div>
+            <div class="county" id="country">IN</div>
+        </div>
+
+    </div>
+    <div class="futurecast">
+        <div class="today" id="curtemp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+            <div class="others">
+            <div class="day" >Mon</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+
+            <div class="temp">Night - 35.6&#176; C</div>
+        </div>
+        </div>
+        <div class="wetherforcast" id="wetherforcast">
+            <div class="wethercastitem">
+                <div class="day" >Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+            <div class="wethercastitem">
+                <div class="day" >Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+            <div class="wethercastitem">
+                <div class="day" >Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+            <div class="wethercastitem">
+                <div class="day" >fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+            <div class="wethercastitem">
+                <div class="day" >Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+            <div class="wethercastitem">
+                <div class="day" >Sun</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wether icon" class="w-icon">
+                
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">day - 35.6&#176; C</div>
+            </div>
+
+
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
